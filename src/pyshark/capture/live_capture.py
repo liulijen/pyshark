@@ -54,4 +54,4 @@ class LiveCapture(Capture):
         :param packet_count: an amount of packets to capture, then stop.
         """
         # Retained for backwards compatibility and to add documentation.
-        return self.packets_from_tshark(packet_count=packet_count)
+        return self._packets_from_tshark_sync(packet_count=packet_count)
